@@ -1,0 +1,12 @@
+TOP GENRES FOR MOVIES
+
+1 action
+2 horror
+3 comedy
+4 sci-fi
+5 thriller
+6 drama
+7 fantasy
+8 adventure 
+9 mystery
+10 musical
