@@ -1,5 +1,4 @@
 import requests
-from bs4 import BeautifulSoup
 import os
 # This will script will ask you which movie you want to get the cover art for then put it in the images folder
 
