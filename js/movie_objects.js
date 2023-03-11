@@ -69,16 +69,14 @@ var eyesWideShut = new moviemaker("Eyes Wide Shut",1999,"Thriller","Tom Cruise",
 var spellBound = new moviemaker("Spellbound",1945,"Thriller","Ingrid Bergman","7.5/10","/images/Thriller/spellbound.jpg");
 var zodiac = new moviemaker("Zodiac",2007,"Thriller","Jake Gyllenhaal","7.7/10","/images/Thriller/zodiac.jpg");
 
-var all_movies = [whiteChicks,theHotChick,stepBrothers,theHangover,horribleBosses,wallE,spiderManIntroTheSpiderVerse ,indianaJonesTheRaidersOfTheLostArk,coco,aliens,theMatrix,theLordOfTheRingsTheReturnOfTheKing,theDarkKnight,starWarsTheEmpireStrikesBack,inception,babylon,blackPanther,magicMikeLastDance,theBansheesOfInsherin,whiteNoise,avatarTheWayOfWater,everythingEverywhere,pussInBootsTheLastWish,theFlash,theLittleMermiad,paranormalActivity,rec,shutter,theExorcist,theFourthKind,hedwigAndTheAngryInch,laLaLand,moulinRouge,purpleRain,southPark,antMan,fastX,infinityPool,knivesOut,knockAtTheCabin,bladeRunner,starWarsAnewHope,starWarsReturnOfTheJedi,chinaTown,drive,eyesWideShut,spellBound,zodiac];
-// test of search function WORKING
-/* searchTerm = prompt("What movie are you looking for?");
+var all_movies = [whiteChicks,theHotChick,stepBrothers,theHangover,horribleBosses,wallE,spiderManIntroTheSpiderVerse,indianaJonesTheRaidersOfTheLostArk,coco,aliens,theMatrix,theLordOfTheRingsTheReturnOfTheKing,theDarkKnight,starWarsTheEmpireStrikesBack,inception,babylon,blackPanther,magicMikeLastDance,theBansheesOfInsherin,whiteNoise,avatarTheWayOfWater,everythingEverywhere,pussInBootsTheLastWish,theFlash,theLittleMermiad,paranormalActivity,rec,shutter,theExorcist,theFourthKind,hedwigAndTheAngryInch,laLaLand,moulinRouge,purpleRain,southPark,antMan,fastX,infinityPool,knivesOut,knockAtTheCabin,bladeRunner,starWarsAnewHope,starWarsReturnOfTheJedi,chinaTown,drive,eyesWideShut,spellBound,zodiac];
+var genres = ["action", "horror", "comedy", "sci-fi", "thriller", "drama", "fantasy", "adventure", "mystery", "musical"]
+function searchEngine(searchValue) {
 var searchResult = all_movies.filter(function(movie){
-    return movie.genre.toLowerCase() == searchTerm.toLowerCase();
+    return movie.genre.toLowerCase() == searchValue.toLowerCase();
 });
 console.log(searchResult);
-console.log(all_movies);
-
 for (let i = 0; i < searchResult.length; i++) {
   document.getElementById("image"+i).src = searchResult[i].art;
 }
-*/
+}
