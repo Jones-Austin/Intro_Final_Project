@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Search Page</title>
 </head>
 <script src="/js/index.js"></script>
 <script src="/js/movie_objects.js"></script>
 <body>
- 	<!-- WEBSITE HEADER -->
-  <style>
+<!-- WEBSITE HEADER -->
+<style>
 	body {
   		margin: 0;
   		font-family: Arial, Helvetica, sans-serif;
@@ -40,15 +40,30 @@
   		color: white;
 	}
 </style>
-    
-<div class="topnav">  
-  <a onclick="homeButtonClick()" href="#logo"><img src="/images/moviefindrLogo.png" height="50" width="50"></a> 
+
+<div class="topnav">
+  <a onclick="homeButtonClick()" href="#logo"><img src="/images/moviefindrLogo.png" height="50" width="50"></a>
   <a href="/html/search_page.html" onclick="searchButtonClick()">Search</a>
   <a href="#aboutUs" onclick="aboutButtonClick()">About Us</a>
   <a href="#settings" onclick="settingsButtonClick()">Settings</a>
 </div>
 
-<h1>Welcome to the homepage</h1>
+
+
+<h1 id="h1">Here are some movies that match the genre </h1>
+<img id="image0">
+<img id="image1">
+<img id="image2">
+<img id="image3">
+<img id="image4">
+<script>
+    var searchValue = localStorage.getItem('searchValue');
+    var h1 = document.getElementById('h1');
+    var existingText = h1.innerHTML;
+    var newWord = searchValue;
+    h1.innerHTML = existingText + " " + newWord + ".";
+    searchEngine(searchValue);
+</script>
+
 
 </body>
-</html>
