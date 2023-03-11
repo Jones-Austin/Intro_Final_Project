@@ -36,7 +36,7 @@ var whiteNoise = new moviemaker("White Noise",2022,"Drama","Adam Driver","5.7/10
 var avatarTheWayOfWater = new moviemaker("Avatar: The Way of Water",2022,"Fantasy","Zoe Saldana","7.8/10","/images/Fantasy/avatar:TheWayOfWater.jpg");
 var everythingEverywhere = new moviemaker("Everything, Everywhere All at Once",2022,"Fantasy","Tom Holland","8.0/10","/images/Fantasy/everythingEverywhereAllAtOnce.jpg");
 var pussInBootsTheLastWish = new moviemaker("Puss in Boots: The Last Wish",2022,"Fantasy","Antonio Banderas","7.9/10","/images/Fantasy/pussInBoots:TheLastWish.jpg");
-var theFlash = new moviemaker("The Flash",2014,"Fantasy","Grant Gustin","7.5/10","i/mages/Fantasy/theFlash.jpg");
+var theFlash = new moviemaker("The Flash",2014,"Fantasy","Grant Gustin","7.5/10","/images/Fantasy/theFlash.jpg");
 var theLittleMermiad = new moviemaker("The Little Mermaid",1989,"Fantasy","Jodi Benson","7.6/10","/images/Fantasy/theLittleMermaid.jpg");
 // Horror
 var paranormalActivity = new moviemaker("Paranormal Activity",2007,"Horror","Katie Featherston","6.3/10","/images/Horror/paranormalActivity.jpg");
@@ -54,7 +54,7 @@ var southPark = new moviemaker("South Park: Bigger, Longer & Uncut",1999,"Musica
 var antMan = new moviemaker("Ant-Man and the Wasp: Quantumania",2023,"Mystery","Paul Rudd","6.5/10","/images/Mystery/ant-manAndTheWasp:Quantumania.jpg");
 var fastX = new moviemaker("Fast X",2023,"Mystery","Vin Diesel","Not out yet","/images/Mystery/fastX.jpg");
 var infinityPool = new moviemaker("Infinity Pool",2023,"Mystery","Alexander Skarsgård","6.1/10","/images/Mystery/infinityPool.jpg");
-var knivesOut = new moviemaker("Knives Out",2019,"Mystery","Daniel Craig","7.9/10","images/Mystery/knivesOut.jpg");
+var knivesOut = new moviemaker("Knives Out",2019,"Mystery","Daniel Craig","7.9/10","/images/Mystery/knivesOut.jpg");
 var knockAtTheCabin = new moviemaker("Knock at the Cabin",2023,"Mystery","Dave Bautista","6.1/10","/images/Mystery/knockAtTheCabin.jpg");
 // Sci - Fi 
 var bladeRunner = new moviemaker("Blade Runner",1982,"Sci-Fi","Harrison Ford","8.1/10","/images/Sci-fi/bladeRunner.jpg");
@@ -69,7 +69,7 @@ var eyesWideShut = new moviemaker("Eyes Wide Shut",1999,"Thriller","Tom Cruise",
 var spellBound = new moviemaker("Spellbound",1945,"Thriller","Ingrid Bergman","7.5/10","/images/Thriller/spellbound.jpg");
 var zodiac = new moviemaker("Zodiac",2007,"Thriller","Jake Gyllenhaal","7.7/10","/images/Thriller/zodiac.jpg");
 
-var all_movies = [whiteChicks,theHotChick,stepBrothers,theHangover,horribleBosses,wallE,spiderManIntroTheSpiderVerse,indianaJonesTheRaidersOfTheLostArk,coco,aliens,theMatrix,theLordOfTheRingsTheReturnOfTheKing,theDarkKnight,starWarsTheEmpireStrikesBack,inception,babylon,blackPanther,magicMikeLastDance,theBansheesOfInsherin,whiteNoise,avatarTheWayOfWater,everythingEverywhere,pussInBootsTheLastWish,theFlash,theLittleMermiad,paranormalActivity,rec,shutter,theExorcist,theFourthKind,hedwigAndTheAngryInch,laLaLand,moulinRouge,purpleRain,southPark,antMan,fastX,infinityPool,knivesOut,knockAtTheCabin,bladeRunner,starWarsAnewHope,starWarsReturnOfTheJedi,chinaTown,drive,eyesWideShut,spellBound,zodiac];
+var all_movies = [theMatrixSCI,starWarsTheEmpireStrikesBackSCI,whiteChicks,theHotChick,stepBrothers,theHangover,horribleBosses,wallE,spiderManIntroTheSpiderVerse,indianaJonesTheRaidersOfTheLostArk,coco,aliens,theMatrix,theLordOfTheRingsTheReturnOfTheKing,theDarkKnight,starWarsTheEmpireStrikesBack,inception,babylon,blackPanther,magicMikeLastDance,theBansheesOfInsherin,whiteNoise,avatarTheWayOfWater,everythingEverywhere,pussInBootsTheLastWish,theFlash,theLittleMermiad,paranormalActivity,rec,shutter,theExorcist,theFourthKind,hedwigAndTheAngryInch,laLaLand,moulinRouge,purpleRain,southPark,antMan,fastX,infinityPool,knivesOut,knockAtTheCabin,bladeRunner,starWarsAnewHope,starWarsReturnOfTheJedi,chinaTown,drive,eyesWideShut,spellBound,zodiac];
 var genres = ["action", "horror", "comedy", "sci-fi", "thriller", "drama", "fantasy", "adventure", "mystery", "musical"]
 function searchEngine(searchValue) {
 var searchResult = all_movies.filter(function(movie){
