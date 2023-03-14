@@ -78,5 +78,8 @@ var searchResult = all_movies.filter(function(movie){
 console.log(searchResult);
 for (let i = 0; i < searchResult.length; i++) {
   document.getElementById("image"+i).src = searchResult[i].art;
+  document.getElementById("image"+i).alt = searchResult[i].title;
 }
 }
+
+

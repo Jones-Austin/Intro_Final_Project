@@ -53,11 +53,13 @@
 
 
 <h1 id="h1">Here are some movies that match the genre </h1>
-<img id="image0" width="300" height="500">
-<img id="image1" width="300" height="500">
-<img id="image2" width="300" height="500">
-<img id="image3" width="300" height="500">
-<img id="image4" width="300" height="500">
+<div id="image-container">
+	<img id="image0" width="300" height="500">
+	<img id="image1" width="300" height="500">
+	<img id="image2" width="300" height="500">
+	<img id="image3" width="300" height="500">
+	<img id="image4" width="300" height="500">
+</div>
 <script>
     var searchValue = localStorage.getItem('searchValue');
     var h1 = document.getElementById('h1');
@@ -65,6 +67,15 @@
     var newWord = searchValue;
     h1.innerHTML = existingText + " " + newWord + ".";
     searchEngine(searchValue);
+	localStorage.removeItem('searchValue');
+	var images = document.querySelectorAll('#image-container img');
+	for (var i = 0; i < images.length; i++) {
+  		images[i].addEventListener('click', function(event) {
+    	var alt = this.getAttribute('alt');
+    	localStorage.setItem('clickedImage', alt);
+    	window.location.href = '/html/details.html';
+  	});
+	}
 </script>
 
 
