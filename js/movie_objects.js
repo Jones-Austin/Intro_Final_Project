@@ -3,7 +3,7 @@ function moviemaker(title,year,genre,topActor,rating,art) {
     this.year = year;
     this.genre = genre;
     this.topActor = topActor;
-    this.raing = rating;
+    this.rating = rating;
     this.art = art;
     
 }
