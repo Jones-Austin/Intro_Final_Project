@@ -6,8 +6,77 @@
     <meta name="viewport" content="width=devvice-width, initial-scale=1.0"
     <link rel="stylesheet" href="setting_page.html"
 </head>
+<style>
+	body {
+  		margin: 0;
+  		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.topnav {
+		display: flex; 
+		align-items: center;
+ 		overflow: hidden;
+  		background-color: #839399;
+	}
+
+	.topnav a {
+  		float: left;
+  		color: #f2f2f2;
+  		text-align: center;
+  		padding: 19px 22px;
+  		text-decoration: none;
+  		font-size: 17px;
+	}
+
+	.topnav a:hover {
+  		background-color: #ddd;
+  		color: black;
+	}
+
+	.topnav a.active {
+  		background-color: #04AA6D;
+  		color: white;
+	}
+
+    h1 {
+        font-size: 80px;
+    }
+</style>
+
+<div class="topnav">  
+    <a onclick="homeButtonClick()" href="index.html"><img src="/images/movieFindrLogo.png" height="50" width="50"></a> 
+    <a href="/search_page.html" onclick="searchButtonClick()">Search</a>
+    <a href="/about_us.html" onclick="aboutButtonClick()">About Us</a>
+    <a href="/setting_page.html" onclick="settingsButtonClick()">Settings</a>
+  </div>
+
 <div class="heading"> 
     <h1>Settings</h1>
-    <p>Settings for you're preferences of movies.</p>
+    <p>Settings for your preferences of movies.</p>
 </div>
+<body>
+    <input type="checkbox" id="movieSetting1" name="movieSetting1" value="Child Mode">
+    <label for="vehicle1"> Child Mode</label><br>
+    <input type="checkbox" id="movieSetting2" name="movieSetting2" value="Action">
+    <label for="vehicle1"> Action</label><br>
+    <input type="checkbox" id="movieSetting3" name="movieSetting3" value="Adventure">
+    <label for="vehicle1"> Adventure</label><br>
+    <input type="checkbox" id="movieSetting4" name="movieSetting4" value="Comedy">
+    <label for="vehicle1"> Comedy</label><br>
+    <input type="checkbox" id="movieSetting5" name="movieSetting5" value="Drama">
+    <label for="vehicle1"> Drama</label><br>
+    <input type="checkbox" id="movieSetting6" name="movieSetting6" value="Fantasy">
+    <label for="vehicle1"> Fantasy</label><br>
+    <input type="checkbox" id="movieSetting7" name="movieSetting7" value="Horror">
+    <label for="vehicle1"> Horror</label><br>
+    <input type="checkbox" id="movieSetting8" name="movieSetting8" value="Musical">
+    <label for="vehicle1"> Musical</label><br>
+    <input type="checkbox" id="movieSetting9" name="movieSetting9" value="Mystery">
+    <label for="vehicle1"> Mystery</label><br>
+    <input type="checkbox" id="movieSetting10" name="movieSetting10" value="Sci-Fi">
+    <label for="vehicle1"> Sci-Fi</label><br>
+    <input type="checkbox" id="movieSetting11" name="movieSetting11" value="Thriller">
+    <label for="vehicle1"> Thriller</label><br>
+    <input type="submit" value="Submit">
+</body>
 </html>
