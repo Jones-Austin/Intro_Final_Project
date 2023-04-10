@@ -41,39 +41,61 @@
   		background-color: #04AA6D;
   		color: white;
 	}
-    
-    h1 {
-    font-family: math;
-    }
+
+	.image { 
+		position: relative; 
+		width: 100%; 
+	}
+
+	h1 { 
+		position: absolute;
+		top: 50px;  
+		left: 0;
+   		font-size: 100px; 
+		color: white;
+		font-family: math;
+	}
+
+	h2 {
+		position: absolute;
+		top: 50px;  
+		left: 0;
+   		font-size: 100px; 
+		color: black;
+		font-family: math;
+	}
 </style>
     
 <div class="topnav">  
   <a onclick="homeButtonClick()" href="index.html"><img src="C:\Users\Ryan\OneDrive\Desktop\CMPS-162\aa\final project\moviefindrLogo.png" height="50" width="50"></a> 
   <a href="/html/search_page.html" onclick="searchButtonClick()">Search</a>
-  <a href="#aboutUs" onclick="aboutButtonClick()">About Us</a>
-  <a href="#settings" onclick="settingsButtonClick()">Settings</a>
+  <a href="/about_us.html" onclick="aboutButtonClick()">About Us</a>
+  <a href="/settings.html" onclick="settingsButtonClick()">Settings</a>
 </div>
   
   <!--HOMEPAGE BODY-->
-<img src="C:\Users\Ryan\OneDrive\Desktop\CMPS-162\aa\final project\websiteBackground.png" width="800" height="400">
-  <h1>Thousands of movies, <br>all on your keyboard.</br></h1>
 
-  
-  <h2>MovieFindr is <b>THE</b> way to find your favorite movies </h2>
-  
-  <h2>Search hundreds of genres in seconds</h2>
-  
-  <h2>Soon, find new movies similar to what you look up</h2>
-  
-  
-  
-  
-  
-  <h4>Questions?</h4>
-  <p>Email: example@mail.com</p>
-  <p>Phone: ###-###-####</p>
-  <p>Hours: </p>
-  
-  <h5>Copyright MovieFindr LLC</h5>
+<div class="image">
+	<img src="C:\Users\Ryan\OneDrive\Desktop\websiteBackground.png" width="1519px">
+	<h1>Thousands of movies,<br> all on your keyboard.</br><br>MovieFindr is THE way <br>to search for your<br> favorite movies.|</br></br></br></h1>
+	
+</div>
+
+<div class="image">
+	<img src="C:\Users\Ryan\OneDrive\Desktop\secondbackgroundImage.jpg" width="1519px">
+	<h2>Search through hundreds of genres and get information on your favorite movies, for free!<br><br>Find other movie recommendations based on your searches</br></br></h2>
+	
+</div>
+
+<div class="image">
+	<img src="C:\Users\Ryan\OneDrive\Desktop\secondbackgroundImage.jpg" width="1519px">
+	<h2>Search through hundreds of genres and get information on your favorite movies, for free!<br><br>Find other movie recommendations based on your searches</br></br></h2>
+	
+</div>
+
+<footer>  
+	The Text which we want to insert in footer.  
+</footer>  
+
 </body>
 </html>
